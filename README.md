@@ -1,4 +1,4 @@
-# Regret AI 🧠
+# Regret AI
 
 An AI-powered decision-making assistant that helps minimize regret by analyzing life decisions through counterfactual simulation and multi-agent reasoning.
 
@@ -6,7 +6,7 @@ An AI-powered decision-making assistant that helps minimize regret by analyzing 
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## ✨ Features
+## Features
 
 - **Counterfactual Simulation**: Explore alternative outcomes for your decisions
 - **Multi-Agent Regret Council**: Aggregates perspectives from Risk-Averse, Optimist, Rational, and Long-Term agents
@@ -15,7 +15,7 @@ An AI-powered decision-making assistant that helps minimize regret by analyzing 
 - **Real-time Dashboard**: Beautiful web interface with live statistics and charts
 - **Ollama Integration**: Uses local LLMs for intelligent outcome prediction
 
-## 🖥️ Dashboard Preview
+## Dashboard Preview
 
 The dashboard includes:
 - Decision form with emotion selection
@@ -24,7 +24,7 @@ The dashboard includes:
 - Decision timeline
 - Real-time health monitoring
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -66,7 +66,7 @@ The dashboard includes:
    - Local: http://localhost:8000
    - Network: http://YOUR_IP:8000
 
-## 📱 Mobile Access
+## Mobile Access
 
 To access from your mobile device:
 
@@ -84,7 +84,7 @@ To access from your mobile device:
    ```
 3. Open `http://YOUR_IP:8000` on your mobile browser
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Core Endpoints
 
@@ -136,26 +136,26 @@ curl -X POST "http://localhost:8000/decide" \
 - `anger` - Focuses on personal, relationships
 - `confidence` - Focuses on career, finance, learning
 
-## 🏗️ Architecture
+## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Regret AI System                      │
-├─────────────────────────────────────────────────────────┤
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐ │
-│  │   Decision  │  │ Counterfact │  │  Regret Council │ │
-│  │   Engine    │──│  Simulator  │──│  (Multi-Agent)  │ │
-│  └─────────────┘  └─────────────┘  └─────────────────┘ │
-│         │                │                   │          │
-│         ▼                ▼                   ▼          │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐ │
-│  │   Regret    │  │   Regret    │  │     Ollama      │ │
-│  │   Policy    │  │   Memory    │  │    Gateway      │ │
-│  └─────────────┘  └─────────────┘  └─────────────────┘ │
-└─────────────────────────────────────────────────────────┘
++-----------------------------------------------------------+
+|                    Regret AI System                        |
++-----------------------------------------------------------+
+|  +--------------+  +--------------+  +-----------------+  |
+|  |   Decision   |  | Counterfact  |  |  Regret Council |  |
+|  |   Engine     |--|  Simulator   |--|  (Multi-Agent)  |  |
+|  +--------------+  +--------------+  +-----------------+  |
+|         |                |                   |            |
+|         v                v                   v            |
+|  +--------------+  +--------------+  +-----------------+  |
+|  |   Regret     |  |   Regret     |  |     Ollama      |  |
+|  |   Policy     |  |   Memory     |  |    Gateway      |  |
+|  +--------------+  +--------------+  +-----------------+  |
++-----------------------------------------------------------+
 ```
 
-## 📊 Decision Domains
+## Decision Domains
 
 | Domain | Example Actions |
 |--------|-----------------|
@@ -168,7 +168,7 @@ curl -X POST "http://localhost:8000/decide" \
 | Personal | Reflect, Focus on discipline |
 | Digital | Reduce social media, Build online presence |
 
-## 🔧 Configuration
+## Configuration
 
 Key configuration variables in `main.py`:
 
@@ -178,7 +178,7 @@ BETA = 0.4         # Weight for outcome feedback
 OLLAMA_URL = "http://localhost:11434"  # Ollama server URL
 ```
 
-## 📝 Requirements
+## Requirements
 
 ```
 fastapi
@@ -189,7 +189,7 @@ pydantic
 sentence-transformers
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -197,11 +197,11 @@ sentence-transformers
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [FastAPI](https://fastapi.tiangolo.com/) - Modern web framework
 - [Ollama](https://ollama.ai/) - Local LLM inference
@@ -210,4 +210,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by [Sayon Manna](https://github.com/sayon999-d)
+Made by [Sayon Manna](https://github.com/sayon999-d)
